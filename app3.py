@@ -24,7 +24,7 @@ def fail(score):
 def results(marks):
     result=""
     if marks >= 50:
-       result = "sucess"
+       result = "success"
     else:
         result = "fail"
     return redirect(url_for(result,score=marks))
