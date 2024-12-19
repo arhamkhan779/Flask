@@ -7,6 +7,14 @@
 </head>
 <body>
     <h1> Final Results</h1>
-    The student is {{ result }} and the percentage is {{ percentage}}
+    <table border="2">
+      {% for key, value in percentage.items() %}
+        <tr>
+            <th>{{ key }}</th>
+            <th>{{ value }}</th>
+        </tr>
+      {% endfor %}  
+    </table>
+
 </body>
 </html>
